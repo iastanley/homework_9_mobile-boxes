@@ -2,10 +2,6 @@ body * {
 	box-sizing: border-box;
 }
 
-/*body * {
-	border: 1px solid black;
-}*/
-
 ul li, #menu, main, div, .outline, header {
 	border: 1px solid black;
 }
@@ -58,7 +54,12 @@ ul li {
 #menu {
 	display: none;
 	float: right;
-	width: 15%;
+	height: 60px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
 }
 /******************************************/
 
@@ -87,7 +88,6 @@ main {
 	width: 20%;
 	margin-right: 2.8%;
 	margin-left: 1%;
-/*	background-color: green;*/
 }
 
 #no-outline div:last-child {
@@ -133,12 +133,12 @@ main {
 
 @media screen and (max-width: 500px){
 
-	header li {
-/*		display: none;*/
-	}
 
+	nav ul {
+		display: none;
+		background-color: green;
+	}
 	.nav {
-		float: none;
 		width: 100%;
 		margin: 1% 0%;
 		background-color: purple;
@@ -151,7 +151,6 @@ main {
 
 	#menu {
 		display: block;
-		background-color: black;
 	}
 
 	.mobile {
